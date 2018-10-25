@@ -17,7 +17,8 @@ class documento extends Model
   		return $this->hasOne('App\control_remitente', 'crem_id', 'doc_crem_id');
   	}
 
-  	public function documento_origen(){
-  		return $this->hasOne('App\origen', 'ori_id', 'doc_ori_id');
-  	}
+    public function documento_control_catalogo(){
+      return $this->hasOne('App\control_catalogo', 'conc_id', 'doc_conc_id');
+    }
+
 }

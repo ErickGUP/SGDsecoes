@@ -13,9 +13,9 @@ class origen extends Model
   	protected $primaryKey = "ori_id";
   	protected $fillable = [];
 
-  	/*public function origen_documento(){
-  		return $this->hasMany('App\documento', 'ori_doc_id', 'ori_doc_id');
+  	public function origen_control_catalogo(){
+  		return $this->hasMany('App\origen_control_catalogo', 'conc_id', 'ori_conc_id');
   	}
-*/
+
   	
 }
