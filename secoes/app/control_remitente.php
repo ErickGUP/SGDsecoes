@@ -14,11 +14,8 @@ class Control_remitente extends Model
   	protected $primaryKey = "crem_id";
   	protected $fillable = [];
 
-  	public function control_remitente-documento(){
-  		return $this->hasMany('App\documento', 'doc_id', 'crem_doc_id' );
-  	}
 
-    public function control_remitente-control_nombre_version_instancia(){
+    /*public function control_remitente-control_nombre_version_instancia(){
       return $this->hasOne('App\control_nombre_version', 'cnv_id', 'crem_inst_cnv_id' );
     }
 
@@ -26,5 +23,5 @@ class Control_remitente extends Model
       return $this->hasOne('App\control_nombre_version', 'cnv_id', 'crem_uni_cnv_id' );
     }
 
-  	
+  	*/
 }
